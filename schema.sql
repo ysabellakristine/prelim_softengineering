@@ -19,3 +19,13 @@ CREATE TABLE Books (
   	Borrow_Price DECIMAL(5,2),
   	Stock_Available INTEGER
 );
+
+CREATE TABLE Checkout (
+    Checkout_id INTEGER PRIMARY KEY,
+    User_id INTEGER,
+    Checkout_date DATE,
+  	Return_date DATE,
+  	Delivery_id INTEGER,
+  	Returndelivery_id INTEGER,
+  	Expected_delivery_date DATE
+);
