@@ -1,0 +1,68 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Users {
+  user_id integer PK
+  username varchar
+  password varchar
+  email varchar
+  address text
+}
+
+Table Books {
+  book_id integer PK
+  title varchar
+  author varchar
+  genre varchar
+  isbn integer
+  book_status varchar
+  borrow_price integer
+  stock_available integer
+}
+
+Table Checkout {
+  checkout_id integer PK
+  user_id integer
+  checkout_date date
+  return_date date
+  delivery_id integer
+  returndelivery_id integer
+  expected_delivery_date date
+}
+
+Table Checkout_Items {
+  checkout_item_id integer PK
+  checkout_id integer
+  book_id integer
+}
+
+Table Deliveries {
+  delivery_id integer PK
+  delivery_date date
+  delivery_address text
+  delivery_status text
+  delivery_type text
+  }
+
+Table Reviews {
+  review_id integer PK
+  book_id integer
+  user_id integer
+  rating integer
+  comment text
+  review_date date
+  }
+
+
+
+Ref: "Users"."user_id" < "Checkout"."user_id"
+
+Ref: "Deliveries"."delivery_id" < "Checkout"."delivery_id"
+
+Ref: "Books"."book_id" < "Checkout_Items"."book_id"
+
+Ref: "Books"."book_id" < "Reviews"."book_id"
+
+Ref: "Users"."user_id" < "Reviews"."user_id"
+
+Ref: "Checkout"."checkout_id" < "Checkout_Items"."checkout_id"
