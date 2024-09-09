@@ -35,3 +35,11 @@ CREATE Table Checkout_Items (
 	Checkout_id INTEGER,
     Book_id INTEGER
 );
+
+  CREATE Table Deliveries (
+	Delivery_id INTEGER PRIMARY KEY,
+	Delivery_date DATE,
+    Delivery_address TEXT,
+    Delivery_status TEXT,
+    Delivery_type TEXT
+);
