@@ -15,6 +15,7 @@ CREATE TABLE Books (
     Author VARCHAR(250),
     Genre VARCHAR(100), 
   	ISBN VARCHAR(13) UNIQUE,
-  	Book_Status VARCHAR(50),	
+  	Book_Status VARCHAR(50),
+  	Borrow_Price DECIMAL(5,2),
   	Stock_Available INTEGER
 );
