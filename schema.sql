@@ -26,7 +26,7 @@ CREATE TABLE Checkout (
     Checkout_date DATE,
   	Return_date DATE,
   	Delivery_id INTEGER,
-  	Returndelivery_id INTEGER,
+  	Return_delivery_id INTEGER,
   	Expected_delivery_date DATE
 );
 
@@ -43,3 +43,13 @@ CREATE Table Checkout_Items (
     Delivery_status TEXT,
     Delivery_type TEXT
 );
+
+  CREATE Table Reviews (
+	Review_id INTEGER PRIMARY KEY,
+	Book_id INTEGER,
+    User_id INTEGER,
+    Rating INTEGER,
+    Comment TEXT,
+    Review_date date
+);
+
