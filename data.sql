@@ -28,8 +28,8 @@ INSERT INTO Deliveries (Delivery_id, Delivery_date, Delivery_address, Delivery_s
 INSERT INTO Deliveries (Delivery_id, Delivery_date, Delivery_address, Delivery_status, Delivery_type) VALUES (2031692406, '6774-01-27', '510 5th Alley', 'Failed', 'Returning');
 INSERT INTO Deliveries (Delivery_id, Delivery_date, Delivery_address, Delivery_status, Delivery_type) VALUES (479216169, '4724-11-22', '2154 High Crossing Way', 'Failed', 'Returning');
 
-INSERT INTO Reviews (Review_id, Book_id, User_id, Rating, Review_date) VALUES (1453859950, 1927408439, 219502, 5, '6753-07-12');
-INSERT INTO Reviews (Review_id, Book_id, User_id, Rating, Review_date) VALUES (2111213220, 306620102, 648401, 2, '9551-02-18');
-INSERT INTO Reviews (Review_id, Book_id, User_id, Rating, Review_date) VALUES (1113599355, 1898906078, 185191, 4, '5050-06-13');
-INSERT INTO Reviews (Review_id, Book_id, User_id, Rating, Review_date) VALUES (1882384520, 1818465896, 600960, 3, '6449-09-08');
-INSERT INTO Reviews (Review_id, Book_id, User_id, Rating, Review_date) VALUES (2047274977, 268921989, 648401, 1, '6941-01-02');
+insert into Reviews (Review_id, Book_id, User_id, Rating, Review_date, Comment) values (309, 1442349208, 9547, 5, '2013-03-25', 'bifurcated');
+insert into Reviews (Review_id, Book_id, User_id, Rating, Review_date, Comment) values (5236, 3772, 332, 5, '2004-12-18', '3rd generation');
+insert into Reviews (Review_id, Book_id, User_id, Rating, Review_date, Comment) values (1761, 9941, 358907, 4, '2005-12-09', 'emulation');
+insert into Reviews (Review_id, Book_id, User_id, Rating, Review_date, Comment) values (3731, 8113, 883, 5, '2016-09-21', 'Synergized');
+insert into Reviews (Review_id, Book_id, User_id, Rating, Review_date, Comment) values (3113, 7554, 2759, 5, '2018-12-19', 'executive');
