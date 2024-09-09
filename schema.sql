@@ -29,3 +29,9 @@ CREATE TABLE Checkout (
   	Returndelivery_id INTEGER,
   	Expected_delivery_date DATE
 );
+
+CREATE Table Checkout_Items (
+	Checkout_item_id INTEGER PRIMARY KEY,
+	Checkout_id INTEGER,
+    Book_id INTEGER
+);
