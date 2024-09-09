@@ -9,3 +9,12 @@ CREATE TABLE Users (
     Address TEXT
 );
 
+CREATE TABLE Books (
+    Book_id INTEGER PRIMARY KEY,
+    Title VARCHAR(500),
+    Author VARCHAR(250),
+    Genre VARCHAR(100), 
+  	ISBN VARCHAR(13) UNIQUE,
+  	Book_Status VARCHAR(50),	
+  	Stock_Available INTEGER
+);
